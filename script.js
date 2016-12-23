@@ -10,8 +10,3 @@ console.log('getelements', document.getElementsByTagName('button'));
 // }
 
 //----------------------------------------------------------------------------//
-
-/*
-	# resources
-	- http://blog.garstasio.com/you-dont-need-jquery/
-*/
