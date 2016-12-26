@@ -4,7 +4,7 @@
 -->
 
 <!DOCTYPE html>
-<html ng-app="lodestar">
+<html ng-app="loadstar">
   <head>
     <title>Lodestar</title>
     <script type="text/javascript" src="script.js"></script>
@@ -13,7 +13,7 @@
   <body>
 
     <div class="text-center">
-      <h1>Lodestar</h1>
+      <h1>Loadstar</h1>
       <h2>The Internet's Search Bar</h2>
     </div>
 
@@ -21,16 +21,15 @@
       <form>
         <p><input type="text" id="query" /></p>
         <p>
-          <button class="search-button" onClick="search(this)">Google</button>
-          <button class="search-button">Wikipedia</button>
-          <button class="search-button">IMDb</button>
-          <button class="search-button">Letterboxd</button>
-          <button class="search-button">Twitter</button>
-          <button class="search-button">Facebook</button>
-          <button class="search-button">LinkedIn</button>
-          <button class="search-button">RateYourMusic</button>
-          <button class="search-button">Discogs</button>
-          <button class="search-button">Allmusic</button>
+          <button class="search-button" id="google" onclick="getProvider(this)">Google</button>
+          <button class="search-button" id="wikipedia" onclick="getProvider(this)">Wikipedia</button>
+          <button class="search-button" id="imdb" onclick="getProvider(this)">IMDb</button>
+          <button class="search-button" id="letterboxd" onclick="getProvider(this)">Letterboxd</button>
+          <button class="search-button" id="twitter" onclick="getProvider(this)">Twitter</button>
+          <button class="search-button" id="facebook" onclick="getProvider(this)">Facebook</button>
+          <button class="search-button" id="linkedin" onclick="getProvider(this)">LinkedIn</button>
+          <button class="search-button" id="rateyourmusic" onclick="getProvider(this)">RateYourMusic</button>
+          <button class="search-button" id="discogs" onclick="getProvider(this)">Discogs</button>
         </p>
       </form>
     </div>
