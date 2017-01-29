@@ -12,8 +12,10 @@ function constructQuery(providerString) {
 
   switch (providerString) {
     case 'google':
-      urlEncodedQuery = encodeURI(userInput).replace('+', '%2B').replace(/%20/g, '+');
-      location.href = 'https://www.google.com/search?q=' + urlEncodedQuery;
+      // urlEncodedQuery = encodeURI(userInput).replace('+', '%2B').replace(/%20/g, '+');
+      urlEncodedQuery = encodeURIComponent(userInput);
+      console.log(urlEncodedQuery);
+      // location.href = 'https://www.google.com/search?q=' + urlEncodedQuery;
       break;
     case 'wikipedia':
       urlEncodedQuery = encodeURI(userInput).replace(/%20/g, '+');
